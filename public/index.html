@@ -2,13 +2,46 @@
 <html>
     <head>
         <title>Accordion Assignment</title>
-
+        <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     </head>
     <body class="container-fluid">
-        <div>
-            
+        <h2>Accordion</h2>
+        <div class="accordion" id="topics">
+            <div class="accordion-item">
+                <div class="accordion-header">
+
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#css"><h2>Css Tutorial</h2></button>
+                </div>
+                <div id="css" data-bs-parent="#topics" class="accordion-body accordion-collapse collapse">
+                    <p>This is Css Tutorial. In this tutorial we have learn about how work with css and how embeded css with html and by using ths course we go basic to advance so not confuse. All the things is important i will cover so no one question me about these type if you any doubt then contact our any where any time thank you.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#html">
+                        <h2>HTML Tutorial</h2>
+                    </button>
+                </div>
+                <div class="accordion-body accordion-collapse collapse" id="html" data-bs-parent="#topics">
+                    <p>This is HTML Tutorial Good Morning sir I am Prem prakash i belongs to bareilly UP and i had done my Education from bareilly in ther i complated bca from bareily colleg bareilly with 64 percent marks and after i geve the exam
+                        ctet the i got govt college to studyin in mca so i have commplated mca form mjpru bareilly. i have good knowledge about web development Frontend and backend both and i also have have good knowledge programming language c/c++, java, python , and i ma proficient in java to solve problme and algorithms and but i can do als implement code in c c++ python and incldue java and js also. I my college time in bca i complate two project on is mini project and one is major project and in my mca time i have complate 2 project At time of bca i have done mern stack course from ashok it and after recently in mca i have don full stack java with devops tool to deployemnt also that is my introduction thank you.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#js">
+                        <h2>JS Tutorial</h2>
+                    </button>
+                </div>
+                <div class="accordion-body accordion-collapse collapse" id="js" data-bs-parent="#topics">
+                    <p>Javascript is scripting language which is wiedly used in frontend web and backend devlopment with node js.</p>
+                </div>
+            </div>            
         </div>
 
-
+        <script src="/node_modules/jQuery/lib/node-jquery.js"></script>
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     </body>
 </html>
